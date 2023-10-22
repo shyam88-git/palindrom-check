@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panlindrom</title>
+
+    <script>
+
+        function isPalindrom(str){
+
+            //step 1: remove the space and convert to lowerCase.
+
+            let cleanStr=str.replace(/\s/g ,"").toLowerCase();
+
+            //step2:reverse the word
+
+            let revStr=cleanStr.split("").reverse().join("");
+
+            return cleanStr==revStr;
+        }
+        
+        console.log(isPalindrom("racecar"));
+        console.log(isPalindrom("SHyamSHarki"));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
